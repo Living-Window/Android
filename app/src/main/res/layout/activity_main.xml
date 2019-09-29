@@ -1,0 +1,120 @@
+
+    <?xml version="1.0" encoding="utf-8"?>
+
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+    />
+
+<!--<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+        android:layout_height="wrap_content"
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </android.support.design.widget.AppBarLayout>-->
+
+        <!--android:id="@+id/tempHumText"-->
+
+    <!-- <include
+        android:id="@+id/addButton"
+        layout="@layout/content_main"
+        app:layout_anchor="@+id/addButton"
+        app:layout_anchorGravity="bottom|center" />
+
+    Add an item
+    //insert textboxes here-->
+    <TextView
+
+        android:id="@+id/tempHumText"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="100dp"
+        android:width="300dp"
+
+        android:text="Humidity data will show here"
+        android:textColor="@color/RedShade" />
+
+    <TextView
+        android:id="@+id/waterproofSensorText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tempHumText"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+
+        android:width="300dp"
+        android:text="Temperature data will show here"
+        android:textColor="@color/orangeShade" />
+
+    <TextView
+        android:id="@+id/pHSensorText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/waterproofSensorText"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:width="300dp"
+        android:text="pH data will show here"
+        android:textColor="@color/GreenShade" />
+
+    <TextView
+        android:id="@+id/lightStatusText"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pHSensorText"
+        android:layout_centerHorizontal="true"
+        android:layoutCenterHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:width="300dp"
+        android:text="Light status will show here"
+        android:textColor="@color/blueShade" />
+
+    <TextView
+        android:id="@+id/airPumpStatusText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lightStatusText"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:width="300dp"
+        android:text="Air pump status will show here"
+        android:textColor="@color/purpleShade" />
+
+
+    <Button
+        android:id="@+id/addButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:onClick="buttonClicked"
+        android:text="Click Me!" />
+
+</LinearLayout>
